@@ -15,9 +15,21 @@ class Header extends Component {
 				<div className="row">
 					<div className="col-6">
 						<h3 className="lead my-reads-subtitle">
-							Keep track of all the books you've read, want to read, or are currently reading. To browse
-							for new books, click the plus button, and select the shelf you would like to place each book
-							in.
+							Keep track of all your books. Designate each book to a shelf, and change them as you read
+							more of your collection. Add more books to your shelf by selecting the add button. Be sure
+							to only search for terms{' '}
+							<a
+								className="text-warning"
+								href="https://github.com/udacity/reactnd-project-myreads-starter/blob/master/SEARCH_TERMS.md"
+							>
+								listed on the selected terms list
+							</a>. For more information about the project see the{' '}
+							<a
+								className="text-warning"
+								href="https://github.com/benjaminDanis/MyReads/blob/master/README.md"
+							>
+								READEME
+							</a>.
 						</h3>
 					</div>
 				</div>

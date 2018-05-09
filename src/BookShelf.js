@@ -129,7 +129,7 @@ class BookShelf extends Component {
 				</div>
 
 				<div>
-					<Link to="/search" className="search-new-book" />
+					<Link to="/MyReads/search" className="search-new-book" />
 				</div>
 			</div>
 		);

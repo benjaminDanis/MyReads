@@ -27,7 +27,7 @@ class BookSearch extends Component {
 	updateQuery = query => {
 		this.setState(
 			() => ({
-				query: query.replace(/ /g, '%20')
+				query: query.trim()
 			}),
 			() => this.runQuery(this.state.query.toLowerCase())
 		);
@@ -69,13 +69,15 @@ class BookSearch extends Component {
 					<div className="row">
 						<div className="mx-auto col-10">
 							<form>
-								<Link to="/" className="book-search-back-arrow" />
-								<input
-									className="form-control form-control-lg book-search-input"
-									onChange={event => {
-										this.updateQuery(event.target.value);
-									}}
-								/>
+								<Link to="/MyReads" className="book-search-back-arrow" />
+								<div className="input-group">
+									<input
+										className="pl-5 form-control form-control-lg book-search-input"
+										onChange={event => {
+											this.updateQuery(event.target.value);
+										}}
+									/>
+								</div>
 								<small className="form-text text-muted">
 									Showing {this.state.books.length} results for {this.state.query}
 								</small>
@@ -114,14 +116,16 @@ class BookSearch extends Component {
 					<div className="row">
 						<div className="mx-auto col-10">
 							<form>
-								<Link to="/" className="book-search-back-arrow" />
-								<input
-									placeholder="Search..."
-									className="form-control form-control-lg book-search-input"
-									onChange={event => {
-										this.updateQuery(event.target.value);
-									}}
-								/>
+								<Link to="/MyReads" className="book-search-back-arrow" />
+								<div className="input-group">
+									<input
+										placeholder="Search..."
+										className="pl-5 form-control form-control-lg book-search-input"
+										onChange={event => {
+											this.updateQuery(event.target.value);
+										}}
+									/>
+								</div>
 								<small className="form-text text-muted">
 									Showing {this.state.books.length} results for{' '}
 									{this.state.query ? this.state.query : ' ...'}

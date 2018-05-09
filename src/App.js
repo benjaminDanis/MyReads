@@ -46,7 +46,7 @@ class BookApp extends Component {
       <div className="Book-App fluid-container">
         <Route
           exact
-          path="/"
+          path="/MyReads"
           render={() => {
             return (
               <div className="app-wrapper">
@@ -59,7 +59,7 @@ class BookApp extends Component {
 
         <Route
           exact
-          path="/search"
+          path="/MyReads/search"
           render={({ history }) => {
             return <BookSearch currentShelf={this.state.books} />;
           }}
