@@ -6,7 +6,7 @@ MyReads is a fullstack application built with React.js. Users can update a Book 
 
 ### Deployed Version
 
-[Live Version](https://benjamindanis.github.io/MyReads/search).
+[Live Version](https://benjamindanis.github.io/MyReads/).
 
 ### Start
 
