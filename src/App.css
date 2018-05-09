@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400');
+
+.App {
+  text-align: center;
+}
+
+.Book-App {
+  /*font-family: 'Roboto', sans-serif;*/
+  /*font-weight: 100;*/
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+/********* BOOK SEARCH STYLES *********/
+
+.book-search-div {
+}
+
+.book-search-input {
+  width: 95%;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 12px 20px;
+  margin-top: 50px;
+}
+
+.book-search-back-arrow {
+  z-index: 1px;
+  position: fixed;
+  left: 15px;
+  bottom: 15px;
+  width: 60px;
+  height: 60px;
+  background-image: url(icons/back_arrow_edit.png);
+  background-size: 60px;
+}
+
+.search-new-book {
+  display: block;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 70px;
+  height: 70px;
+  background-image: url(icons/plus_button_edit.png);
+  background-size: 70px;
+}
+/********* BOOKSHELF STYLES *********/
+
+.case {
+  padding-top: 20px;
+}
+
+.shelf {
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+.shelf-title {
+  padding-left: 20px;
+  color: white;
+}
+
+.shelf-list {
+  list-style-type: none;
+  display: block;
+  width: 100%;
+  display: block;
+  float: left;
+  height: 350px;
+  overflow: scroll;
+  /*white-space: nowrap;*/
+}
+
+.shelf-list li {
+  float: left;
+  width: 200px;
+}
+
+.shelf-title-block {
+  background: #3b4371; /* fallback for old browsers */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 300px;
+  padding-top: 50px;
+}
+
+.shelf-title-col {
+  height: 100%;
+}
+
+/********* BOOK COMPONENT STYLES *********/
+
+select {
+  margin-left: 10px;
+}
+
+.book-title {
+  font-weight: lighter;
+}
+
+/* HEADER STYLES */
+.header-container {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+
+  color: white;
+  background: #f3904f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3b4371, #f3904f); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #3b4371,
+    #f3904f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 60px 20px;
+  /*font-family: 'Roboto', sans-serif;*/
+  /*font-weight: 100;*/
+  box-shadow: 12px 12px 5px;
+}
+
+.book-logo {
+  background-image: url('icons/book1_edit.png');
+  margin-left: 20px;
+  height: 100px;
+  width: 100px;
+  background-size: 100px;
+}
+
+.app-wrapper {
+  margin: 0px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
