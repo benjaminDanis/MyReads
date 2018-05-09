@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import * as BooksAPI from './BooksAPI';
 
 class Book extends Component {
 	state = {
@@ -28,6 +27,7 @@ class Book extends Component {
 						<img
 							className="mx-auto"
 							src={this.props.bookCover ? this.props.bookCover : 'http://via.placeholder.com/120x200'}
+							alt="book cover"
 						/>
 						<div className="input-group ">
 							<select

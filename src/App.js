@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Book from './Book';
 import BookSearch from './BookSearch';
 import BookShelf from './BookShelf';
 import Header from './Header';
