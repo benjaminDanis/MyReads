@@ -28,7 +28,7 @@ class Header extends Component {
 								className="text-warning"
 								href="https://github.com/benjaminDanis/MyReads/blob/master/README.md"
 							>
-								READEME
+								README
 							</a>.
 						</h3>
 					</div>
