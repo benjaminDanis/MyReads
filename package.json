@@ -2,9 +2,11 @@
   "name": "my-reads",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://benjamindanis.github.io/MyReads/",
   "dependencies": {
     "bootstrap": "^4.1.1",
     "escape-string-regexp": "^1.0.5",
+    "gh-pages": "^1.1.0",
     "prettier": "^1.12.1",
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
@@ -18,6 +20,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build&&gh-pages -d build"
   }
 }
